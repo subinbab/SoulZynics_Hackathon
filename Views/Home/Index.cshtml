@@ -1,0 +1,20 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+@{
+    List<string> linksData = (List<string>)ViewData["links"];
+    string linlData = linksData[0];
+}
+@foreach(var item in linksData)
+{
+    <p>@item</p>
+}
+<a href="https://www.amazon.in"@linlData>@linlData</a>
+<script>
+
+</script>
